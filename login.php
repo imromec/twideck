@@ -1,9 +1,9 @@
 <?php
-    
-    if(isset($_SESSION['status']) && $_SESSION['status'] == 'verified') 
-    {
-        header('Location: /');
-    }
+session_start();
+if(isset($_SESSION['status']) && $_SESSION['status'] == 'verified') 
+{
+    header('Location: /');
+}
 ?>
 <html>
 <head>
