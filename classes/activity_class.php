@@ -58,6 +58,7 @@ class UserActivity {
             //set session
             $_SESSION['status'] = 'verified';
             $_SESSION['request_vars'] = $access_token;
+            $_SESSION['user_details'] = $connection->get('account/verify_credentials', ['include_email' => 'true']); 
 
             //Unset no longer needed request tokens
             unset($_SESSION['oauth_token']);
