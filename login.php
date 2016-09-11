@@ -1,26 +1,3 @@
-<?php
-
-/*require_once 'includes/global.php';
- 
-$twitter_id = "";
-
-//login with twitter
-if(isset($_REQUEST['submit-login'])) { 
- 
-    $twitter_id = $_REQUEST['twitter_id'];
- 
-    $userActivity = new UserActivity();
-
-    if($userActivity->login($twitter_id))
-    {
-        header("Location: index.php");
-    }
-    else
-    {
-        echo "Sorry! Something went wrong";
-    }
-}*/
-?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -33,7 +10,7 @@ if(isset($_REQUEST['submit-login'])) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/twideck/css/style.css">
 </head>
 
 <body>
@@ -42,7 +19,7 @@ if(isset($_REQUEST['submit-login'])) {
         <div class="col-lg-12 center-manage">
            <h1 class="brand-logo"><b>twiDeck<b></h1>
            <h2 class="brand-tagline">Simplify Your Twitter Experience</h2><br>
-           <a href="#" id="sign-in-with-twitter"><img src="/img/twitter-btn.png"></a>
+           <a href="/process/"><img src="/twideck/img/twitter-btn.png"></a>
         </div>
       </div>
     </div>
