@@ -1,3 +1,10 @@
+<?php
+    
+    if(isset($_SESSION['status']) && $_SESSION['status'] == 'verified') 
+    {
+        header('Location: /');
+    }
+?>
 <html>
 <head>
     <meta charset="utf-8">
