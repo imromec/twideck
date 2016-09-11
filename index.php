@@ -9,7 +9,7 @@ if(isset($_SESSION['status']) && $_SESSION['status'] == 'verified')
 }
 else
 {
-	header('Location: login/');
+	header('Location: /login/');
 }
 
 //Retrive variables

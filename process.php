@@ -9,7 +9,7 @@ if(isset($_REQUEST['oauth_token']) && $_SESSION['oauth_token']  !== $_REQUEST['o
 {
 	session_destroy();
 
-	header('Location: login/');	
+	header('Location: /login/');	
 }
 else if(isset($_REQUEST['oauth_token']) && $_SESSION['oauth_token'] == $_REQUEST['oauth_token'])
 {
