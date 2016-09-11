@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/twideck/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <div class="col-lg-12 center-manage">
            <h1 class="brand-logo"><b>twiDeck<b></h1>
            <h2 class="brand-tagline">Simplify Your Twitter Experience</h2><br>
-           <a href="/process/"><img src="/twideck/img/twitter-btn.png"></a>
+           <a href="/process/"><img src="/img/twitter-btn.png"></a>
         </div>
       </div>
     </div>
