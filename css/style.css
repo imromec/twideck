@@ -17,3 +17,65 @@ body
 	font-weight: 100;
 	font-size: 25px;
 }
+.welcome-twideck
+{
+  height: 45px;
+  background-color: #55acee;
+  text-align: center;
+  line-height: 45px;
+}
+.header
+{
+  text-align: center;
+  margin: 2% 0%;
+}
+.name{
+  font-size: 30px;
+}
+.screen-name
+{
+  font-weight: 200;
+}
+.description
+{
+  font-size: 18px;
+}
+.logout-twitter
+{
+  font-size: 18px;
+}
+.logout-twitter a{
+  text-decoration: none;
+  color: #000;
+}
+.centered
+{
+  margin: 0% 10%;
+}
+.tweet_view
+{
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px #888888;
+  border-radius: 5px;
+}
+.tweet_view:hover
+{
+  background-color: #f3f3f3;
+}
+.tweet_by
+{
+  font-size: 18px;
+}
+.content-view
+{
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.tweet-additional-icon
+{
+  opacity: 0.5;
+}
+.placing
+{
+  margin-left: 25px;
+}

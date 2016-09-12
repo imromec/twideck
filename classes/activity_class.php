@@ -44,21 +44,25 @@ class UserActivity {
     //function to revoke user details after fresh login
     public function loggedInUserDetail($oauth_verifier)
     {
-
         //Successful response returns oauth_token, oauth_token_secret, user_id, and screen_name
         $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $_SESSION['oauth_token'] , $_SESSION['oauth_token_secret']);
+        
         $access_token = $connection->oauth("oauth/access_token", array("oauth_verifier" => $oauth_verifier));
 
         $accessToken = $access_token['oauth_token'];
-        $secretToken = $access_token['oauth_token_secret'];
-
+        $accessTokenSecret = $access_token['oauth_token_secret'];
 
         if(isset($oauth_verifier) && $oauth_verifier != '')
         {
+            //Successful response returns oauth_token, oauth_token_secret, user_id, and screen_name
+            $publicConnection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $accessToken , $accessTokenSecret);
+            
+            //get user details
+            $user_details = $publicConnection->get('account/verify_credentials', ['include_email' => 'true']);
             //set session
             $_SESSION['status'] = 'verified';
             $_SESSION['request_vars'] = $access_token;
-            $_SESSION['user_details'] = $connection->get('account/verify_credentials', ['include_email' => 'true']); 
+            $_SESSION['user_details'] = $user_details;
 
             //Unset no longer needed request tokens
             unset($_SESSION['oauth_token']);
@@ -70,6 +74,8 @@ class UserActivity {
         {
             die("Sorry! We are facing problem with communicating to twitter please try again later.");
         }
+
+        return true;
     }
 
 	//destroy the session
