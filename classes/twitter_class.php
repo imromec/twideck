@@ -1,6 +1,7 @@
 <?php
 
 require_once 'activity_class.php';
+
 require "vendor/autoload.php";
 use Abraham\TwitterOAuth\TwitterOAuth;
 

@@ -29,7 +29,7 @@
                   <div class="col-lg-12 tweet_view">
                     <div class="row content-view">
                       <div class="col-md-1">
-                        <img src="<?php echo $tweets[$i]->user->profile_image_url; ?>" class="img-rounded"> 
+                        <img src="<?php echo $tweets[$i]->user->profile_image_url_https; ?>" class="img-rounded"> 
                       </div>
                       <div class="col-md-11">
 
@@ -44,7 +44,7 @@
 
                         <?php if(!empty($tweets[$i]->entities->media)){ ?>
 
-                        <img src="<?php echo $tweets[$i]->entities->media[0]->media_url; ?>" width="<?php echo $tweets[$i]->entities->media[0]->sizes->small->w; ?>" height="<?php echo $tweets[$i]->entities->media[0]->sizes->small->h; ?>" class="img-responsive"><br><br>
+                        <img src="<?php echo $tweets[$i]->entities->media[0]->media_url_https; ?>" width="<?php echo $tweets[$i]->entities->media[0]->sizes->small->w; ?>" height="<?php echo $tweets[$i]->entities->media[0]->sizes->small->h; ?>" class="img-responsive"><br><br>
                         <?php
                       }
                       ?>
@@ -83,7 +83,7 @@
                 <div class="col-lg-12 tweet_view">
                   <div class="row content-view">
                     <div class="col-md-1">
-                      <img src="<?php echo $tweets[$i]->user->profile_image_url; ?>" class="img-rounded"> 
+                      <img src="<?php echo $tweets[$i]->user->profile_image_url_https; ?>" class="img-rounded"> 
                     </div>
                     <div class="col-md-11">
                       <span class="tweet_by"><a href="https://twitter.com/<?php echo $tweets[$i]->user->screen_name; ?>/"><?php echo $tweets[$i]->user->name; ?></a> <span style="opacity:0.5; font-size:15px;">@<?php echo $tweets[$i]->user->screen_name; ?></span></span>
@@ -93,7 +93,7 @@
                       if(!empty($tweets[$i]->entities->media))
                       {
                         ?>
-                        <img src="<?php echo $tweets[$i]->entities->media[0]->media_url; ?>" width="<?php echo $tweets[$i]->entities->media[0]->sizes->small->w; ?>" height="<?php echo $tweets[$i]->entities->media[0]->sizes->small->h; ?>" class="img-responsive"><br><br>
+                        <img src="<?php echo $tweets[$i]->entities->media[0]->media_url_https; ?>" width="<?php echo $tweets[$i]->entities->media[0]->sizes->small->w; ?>" height="<?php echo $tweets[$i]->entities->media[0]->sizes->small->h; ?>" class="img-responsive"><br><br>
                         <?php
                       }
                       ?>

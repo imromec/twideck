@@ -12,7 +12,7 @@ else
 }
 
 //userDetails
-$userProfileImage = $Twitter->getUserProfileKeyValue('profile_image_url');
+$userProfileImage = $Twitter->getUserProfileKeyValue('profile_image_url_https');
 $userProfileImage = str_replace('_normal', '_bigger', $userProfileImage);
 ?>
 
