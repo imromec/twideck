@@ -52,7 +52,7 @@
 
                         <i class="fa fa-reply tweet-additional-icon"></i>
                         <i class="fa fa fa-retweet tweet-additional-icon placing"> <?php echo $tweets[$i]->retweet_count; ?></i>
-                        <i class="fa fa fa-heart tweet-additional-icon placing"> <?php echo $tweets[$i]->favorite_count; ?></i> &nbsp;&nbsp; <span style="opacity:0.5;"><?php echo date( 'D H:i A d M Y', strtotime($tweets[$i]->created_at) ); ?></span>
+                        <i class="fa fa fa-heart tweet-additional-icon placing"> <?php echo $tweets[$i]->favorite_count; ?></i> &nbsp;&nbsp; <span style="opacity:0.5;"><?php echo date( 'D H:i A d M Y', strtotime($tweets[$i]->created_at)+19800); ?></span>
                       </div>
                     </div>
                   </div>
@@ -101,7 +101,7 @@
 
                       <i class="fa fa-reply tweet-additional-icon"></i>
                       <i class="fa fa fa-retweet tweet-additional-icon placing"> <?php echo $tweets[$i]->retweet_count; ?></i>
-                      <i class="fa fa fa-heart tweet-additional-icon placing"> <?php echo $tweets[$i]->favorite_count; ?></i> &nbsp;&nbsp; <span style="opacity:0.5;"><?php echo date( 'D H:i A d M Y', strtotime($tweets[$i]->created_at) ); ?></span>
+                      <i class="fa fa fa-heart tweet-additional-icon placing"> <?php echo $tweets[$i]->favorite_count; ?></i> &nbsp;&nbsp; <span style="opacity:0.5;"><?php echo date( 'D H:i A d M Y', strtotime($tweets[$i]->created_at) + 19800); ?></span>
                     </div>
                   </div>
                 </div>
