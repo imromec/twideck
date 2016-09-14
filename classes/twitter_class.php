@@ -7,8 +7,8 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 
 class TwitterClass{
 
-	public $myAccessToken = '384916275-TgLpTza4VrP4UKcq8qhQwMazfLBRGtHwb52JcMDb';
-	public $myAccessTokenSecret = 'RWDyjX3prlPJ8s0Iw8uvOICYbnyfSuly3Lv1U6XF4kHWj';
+	public $myAccessToken = '*****';
+	public $myAccessTokenSecret = '******';
 		
 	public function getSearchAPIResults($searchKey, $since_id = null, $max_id = null)
 	{	
